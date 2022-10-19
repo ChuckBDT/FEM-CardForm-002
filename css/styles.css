@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --var-light-grayish-violet: hsl(270, 3%, 87%);
+  --var-dark-grayish-violet: hsl(279, 6%, 55%);
+  --var-very-dark-violet: hsl(278, 68%, 11%);
+}
+
+* {
+  margin-block: 0;
+  padding-block: 0;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+}
+
+#card-preview {
+  background-image: url("../images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 33vw;
+}
+
+#card-preview img {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.05);
+}
+
+.front-card {
+  position: absolute;
+  z-index: 2;
+  top: 21%;
+  left: 11%;
+  width: 447px;
+  height: 245px;
+}
+
+.front-card img {
+  position: absolute;
+}
+
+.card-numbers {
+  position: absolute;
+  color: white;
+  font-size: 26.5px;
+  letter-spacing: 3px;
+  left: 30px;
+  bottom: 70px;
+}
+
+.card-name,
+.card-exp {
+  font-size: 14.5px;
+  position: absolute;
+  color: white;
+  bottom: 28px;
+  letter-spacing: 2px;
+}
+
+.card-name {
+  left: 30px;
+}
+
+.card-exp {
+  right: 30px;
+}
+
+.back-card {
+  position: absolute;
+  left: 17%;
+  bottom: 21%;
+  z-index: 1;
+  width: 447px;
+  height: 245px;
+}
+
+.card-crypto {
+  position: absolute;
+  color: white;
+  top: 110px;
+  right: 56px;
+  letter-spacing: 2px;
+  font-size: 14.5px;
+}
+
+#card-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 380px;
+}
+
+#expdate {
+  width: 20px;
+}
+
+form button {
+  background-color: var(--var-very-dark-violet);
+  width: 100%;
+  color: white;
+  height: 50px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
