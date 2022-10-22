@@ -22,7 +22,7 @@
             src="./images/bg-card-front.png"
             alt="Front preview of the card"
           />
-          <p class="card-numbers">9591 6489 6389 101E</p>
+          <p class="card-numbers">0000 0000 0000 0000</p>
           <p class="card-name">FELICIA LEIRE</p>
           <p class="card-exp">09/00</p>
         </div>
@@ -39,33 +39,45 @@
             id="cardname"
             name="cardname"
             placeholder="e.g. Jane Appleseed"
-          /><br />
+          />
           <label for="cardnumb">CARD NUMBER</label><br />
           <input
             type="text"
             id="cardnumb"
             name="cardnumb"
             placeholder="e.g. 1234 5678 9123 0000"
-          /><br />
-          <label for="expdate">EXP. DATE (MM/YY)</label><br />
-          <input type="text" id="expdate" name="expdatemm" placeholder="MM" />
-          <input type="text" id="expdate" name="expdateyy" placeholder="YY" />
-          <label for="ccv">CCV</label><br />
-          <input
-            type="text"
-            id="ccv"
-            name="ccv"
-            placeholder="e.g. 123"
-          /><br /><br />
+          />
+          <div class="exp-and-cvc">
+            <div class="exp">
+              <label for="expdate">EXP. DATE (MM/YY)</label><br />
+              <input
+                type="text"
+                id="expdate"
+                name="expdatemm"
+                placeholder="MM"
+              />
+              <input
+                type="text"
+                id="expdate"
+                name="expdateyy"
+                placeholder="YY"
+              />
+            </div>
+            <div class="cvc">
+              <label for="cvc">CVC</label><br />
+              <input type="text" id="ccv" name="ccv" placeholder="e.g. 123" />
+            </div>
+          </div>
           <button type="submit">Confirm</button>
         </form>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://charlesboudrant.com">Charles Boudrant</a>.
+        </div>
       </section>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://charlesboudrant.com">Charles Boudrant</a>.
-      </div>
     </main>
   </body>
 </html>
