@@ -72,8 +72,8 @@ main {
 .card-numbers {
   position: absolute;
   color: white;
-  font-size: 26.5px;
-  letter-spacing: 3px;
+  font-size: 27px;
+  letter-spacing: 4px;
   left: 30px;
   bottom: 70px;
 }
